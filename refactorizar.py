@@ -1,12 +1,20 @@
-base1 = 10
-altura1 = 5
-area1 = base1 * altura1
-print(f"El area del rectangulo 1 ({base1}*{altura1}) es : {area1}")
+def calcular_area_rectangulo(base, altura):
+  """Calcula el área de un rectángulo"""
+  return base * altura
 
-base2 = 7
-altura2 = 3
-area2 = base2 * altura2
-print(f"el area del rectangualo 2 ({base2}*{altura2}) es : {area2}")
-def mostar_area_rectangulo(numero, base, altura):
+def mostrar_area_rectangulo(numero, base, altura):
+  """Muestra el área de un rectángulo con formato"""
   area = calcular_area_rectangulo(base, altura)
-  print(f"el area del rectangulo {numero} ({base}*{altura}) es : {area}")
+  print(f"El área del rectángulo {numero} ({base}x{altura}) es: {area}")
+
+def main():
+  """Función principal del programa"""
+  # Ejemplo de uso
+  mostrar_area_rectangulo(1, 10, 5)
+
+  # Puedes probar con más rectángulos
+  mostrar_area_rectangulo(2, 8, 3)
+  mostrar_area_rectangulo(3, 15, 7)
+
+if __name__ == "__main__":
+  main()
