@@ -3,7 +3,7 @@ suma_total = 0
 
 for nota in mis_notas:
     suma_total += nota
-
+  
 promedio = suma_total / len(mis_notas)
 
 print(f"suma total de las notas: {suma_total}")
